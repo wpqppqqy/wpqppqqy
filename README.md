@@ -19,4 +19,4 @@
 * Github：[奇迹蛋糕](https://github.com/wpqppqqy)
 * ~~爱发电：[奇迹蛋糕](https://www.ifdian.net/a/wpqppqqy)~~*(没打算用)*
 * ~~花瓣：[奇迹蛋糕](http://huaban.com/user/qmols2a9va)~~*(没打算用)*
-* ~~邮箱：[wpqppqqy@163.com](mailto:wpqppqqy@163.com)~~*(几乎不看，尽量别用这种方式联系，除非有特殊情况或需求)*
+* ~~邮箱：[wpqppqqy@163.com](mailto:wpqppqqy@163.com)~~*(几乎不看，尽量别用这种方式联系，除非遇到特殊情况或有特殊需求)*
