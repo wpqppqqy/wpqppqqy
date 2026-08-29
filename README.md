@@ -21,4 +21,4 @@
 * ~~花瓣：[奇迹蛋糕](http://huaban.com/user/qmols2a9va)~~*(没打算用)*
 * ~~邮箱：[wpqppqqy@163.com](mailto:wpqppqqy@163.com)~~*(几乎不看，尽量别用这种方式联系，除非遇到特殊情况或有特殊需求)*
 ---
-**© 2026 奇迹蛋糕 (Github: @wpqppqqy). All Rights Reserved.**
+**© 2026 [奇迹蛋糕](https://wpqppqqy.github.io/) (Github: [@wpqppqqy](https://github.com/wpqppqqy)). All Rights Reserved.**
