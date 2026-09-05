@@ -1,0 +1,176 @@
+/* 全局基础样式 1:1 对齐GitHub原生 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #f6f8fa;
+    color: # 024292f;
+    line-height: 1.5;
+}
+
+/* 顶部导航栏 完全复刻GitHub仓库头部 */
+.gh-header {
+    background-color: # 024292f;
+    color: white;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gh-header svg {
+    fill: white;
+    width: 32px;
+    height: 32px;
+}
+
+.gh-header-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 仓库元信息栏 */
+.repo-meta {
+    padding: 16px 32px;
+    background-color: white;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.repo-meta h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: # 024292f;
+}
+
+/* Wiki专属Tab导航 */
+.wiki-nav {
+    padding: 0 32px;
+    background-color: white;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.wiki-nav a {
+    display: inline-block;
+    padding: 12px 16px;
+    color: # 024292f;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+}
+
+.wiki-nav a.active {
+    border-bottom-color: #fd8c73;
+    font-weight: 600;
+}
+
+/* 主容器修复：消除右侧空白 适配不同宽度 */
+.wiki-container {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 24px auto;
+    padding: 0 32px;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+/* 左侧侧边栏 读取_Sidebar.md渲染 */
+.wiki-sidebar {
+    width: 272px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 14px;
+}
+
+.wiki-sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d0d7de;
+}
+
+.wiki-sidebar a {
+    display: block;
+    padding: 6px 0;
+    color: # 0969da;
+    text-decoration: none;
+}
+
+.wiki-sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* 右侧主内容区 */
+.wiki-content {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 32px;
+    min-width: 0;
+}
+
+/* markdown-body修复：完全适配容器 不溢出 */
+.markdown-body {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+}
+
+.markdown-body pre {
+    background-color: #f6f8fa !important;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: # 0969da;
+}
+
+/* 页脚 读取_Footer.md渲染 */
+.wiki-footer {
+    max-width: 1280px;
+    width: 100%;
+    margin: 24px auto;
+    padding: 16px 32px;
+    font-size: 12px;
+    color: # 0656d76;
+    border-top: 1px solid #d0d7de;
+    box-sizing: border-box;
+}
+
+/* 响应式适配：窄屏手机自动改上下布局 */
+@media (max-width: 768px) {
+    .wiki-container {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .wiki-sidebar {
+        width: 100%;
+    }
+
+    .wiki-content {
+        padding: 16px;
+    }
+
+    .gh-header,
+    .repo-meta,
+    .wiki-nav {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .wiki-footer {
+        padding: 16px;
+    }
+}
