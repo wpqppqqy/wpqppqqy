@@ -1,5 +1,6 @@
 name: Sync Wiki
 on: gollum
+  workflow_dispatch:
 jobs:
   sync:
     runs-on: ubuntu-latest
