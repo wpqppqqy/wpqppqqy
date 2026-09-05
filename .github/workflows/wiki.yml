@@ -1,6 +1,8 @@
 name: Sync Wiki
 on: gollum
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   sync:
     runs-on: ubuntu-latest
