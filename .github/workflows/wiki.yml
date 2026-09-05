@@ -1,0 +1,14 @@
+name: Sync Wiki
+on: gollum
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - run: |
+          git submodule update --remote --merge wiki
+          git config user.name github-actions
+          git commit -am "auto sync wiki" && git push
