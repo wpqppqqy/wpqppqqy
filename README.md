@@ -15,10 +15,19 @@
 * ~~赚很多钱~~
 * ~~世界善待我~~
 ## **联系**
+那些打了**删除线**的方式就不要用了，写在这里只是为了添加**白名单**，如果真要通过那些方式找我的话，我回复**概率很低**，真要回的话，等待时间估计是以**年**为计算单位(又及：为保证通信效率，除邮箱外的任何平台都记得使用**"@"**提及我)
+---
 * B站：[奇迹蛋糕](https://b23.tv/E1e1zZM)
 * Github：[奇迹蛋糕](https://github.com/wpqppqqy)
 * 邮箱：[3688919948@qq.com](mailto:3688919948@qq.com)
+* QQ频道：BILI327187698
+* ~~YouTube：[奇迹蛋糕(@wpqppqqy)](https://youtube.com/@wpqppqqy)~~*(没打算用)*
+* ~~X(Twitter)：[奇迹蛋糕(@wpqppqqy)](https://x.com/wpqppqqy)~~*(没打算用)*
+* ~~Discord：奇迹蛋糕(@wpqppqqy)~~*(没打算用，又及：我怎么都没找到主页链接)*
+* ~~微博：[**wpqppqqy**](https://weibo.com/u/7853182278)~~*(没打算用，又及：我的小众昵称竟然被占用了)*
 * ~~爱发电：[奇迹蛋糕](https://www.ifdian.net/a/wpqppqqy)~~*(没打算用)*
 * ~~花瓣：[奇迹蛋糕](http://huaban.com/user/qmols2a9va)~~*(没打算用)*
+---
+**没**出现在**以上名单**里面的平台就要**警惕**点了，如果发现其有**冒充我的倾向**，劳烦向我**通知**一下，虽然那**有可能**真的是我，但为了以防**万一**，如果是在：抖音、快手、小红书、脸书、P站这些平台的话，**一定是冒充**的，不要犹豫*(又及：您的通知是**自愿的**，我不会为此**支付任何费用**)*
 ---
 **© 2026 [奇迹蛋糕](https://wpqppqqy.github.io/) (Github: [@wpqppqqy](https://github.com/wpqppqqy)). All Rights Reserved.**
