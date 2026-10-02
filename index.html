@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>奇迹蛋糕</title>
+    <link href="min.css" rel="stylesheet">
+    <script src="min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+        @media (max-width: 768px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="markdown-body"></article>
+    <script>
+        fetch('README.md').then(res => res.text()).then(mdContent => document.querySelector('.markdown-body').innerHTML = marked.parse(mdContent));
+    </script>
+</body>
+</html>
