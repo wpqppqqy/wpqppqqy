@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>奇迹蛋糕</title>
+    <link href="min.css" rel="stylesheet">
+    <script src="min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .markdown-body {
+            box-sizing: border-box;
+            min-height: 100vh;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+        @media (max-width: 768px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="markdown-body"></article>
+    <script>
+        async function loadMarkdown(mdPath) {
+            const res = await fetch(mdPath);
+            const mdContent = await res.text();
+            document.querySelector('.markdown-body').innerHTML = marked.parse(mdContent);
+            convertMdLinksToHash();
+        }
+        function convertMdLinksToHash() {
+            const allATags = document.querySelectorAll('.markdown-body a');
+            allATags.forEach(
+                aTag => {
+                    const href = aTag.getAttribute('href');
+                    if (href && /^\/?([\w\u4e00-\u9fa5-\/]+)*\.md$/.test(href)) {
+                        aTag.href = `#${href}`;
+                    }
+                }
+            )
+        }
+        function parseHashAndLoadMd() {
+            const targetMdPath = window.location.hash.slice(1);
+            loadMarkdown(targetMdPath);
+        }
+        window.addEventListener(
+            'DOMContentLoaded',
+            () => {
+                if (!window.location.hash.startsWith('#')) {
+                    window.location.hash = 'README.md';
+                    return;
+                }
+                parseHashAndLoadMd();
+            }
+        )
+        window.addEventListener('hashchange', parseHashAndLoadMd);
+    </script>
+</body>
+</html>
