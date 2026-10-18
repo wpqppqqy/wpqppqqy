@@ -30,38 +30,24 @@
 <body>
     <article class="markdown-body"></article>
     <script>
-        async function loadMarkdown(mdPath) {
-            const res = await fetch(mdPath);
-            const mdContent = await res.text();
-            document.querySelector('.markdown-body').innerHTML = marked.parse(mdContent);
-            convertMdLinksToHash();
-        }
-        function convertMdLinksToHash() {
-            const allATags = document.querySelectorAll('.markdown-body a');
-            allATags.forEach(
-                aTag => {
-                    const href = aTag.getAttribute('href');
-                    if (href && /^\/?([\w\u4e00-\u9fa5-\/]+)*\.md$/.test(href)) {
-                        aTag.href = `#${href}`;
-                    }
+        async function go() {
+            document.querySelector('.markdown-body').innerHTML = marked.parse(await(await fetch(new URLSearchParams(location.search).get('md') || 'README.md')).text());
+            document.querySelectorAll('.markdown-body a').forEach(
+                a => {
+                    let h = a.getAttribute('href');
+                    h && /^\/?([\w\u4e00-\u9fa5-\/]+)*\.md$/.test(h) && (a.href = `?md=${encodeURIComponent(h)}`)
                 }
             )
         }
-        function parseHashAndLoadMd() {
-            const targetMdPath = window.location.hash.slice(1);
-            loadMarkdown(targetMdPath);
-        }
-        window.addEventListener(
-            'DOMContentLoaded',
-            () => {
-                if (!window.location.hash.startsWith('#')) {
-                    window.location.hash = 'README.md';
-                    return;
-                }
-                parseHashAndLoadMd();
+        addEventListener('DOMContentLoaded', go);
+        addEventListener(
+            'click',
+            e => {
+                let a = e.target.closest('a[href^="?md="]');
+                a && (e.preventDefault(), history.pushState({}, '', a.href), go())
             }
-        )
-        window.addEventListener('hashchange', parseHashAndLoadMd);
+        );
+        addEventListener('popstate', go);
     </script>
 </body>
 </html>
