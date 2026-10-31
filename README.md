@@ -6,11 +6,7 @@
 全名：奇迹蛋糕  
 简名：蛋糕  
 别名：wpqppqqy  
-性别：女  
-生日：2010年1月16日  
-年龄：自己算  
-星座：摩羯座  
-物种：人类  
+生日：1月16日  
 ## 性格
 社恐，不爱主动说话，但你如果主动找她，她会很乐意回应你
 
@@ -24,6 +20,10 @@
 成为一名成功的程序员、画师、动画师、曲师
 ## 人生信条
 宿命论、反乌托邦(anti-utopia)
+## 联系
+- B站：[奇迹蛋糕](https://b23.tv/E1e1zZM)
+- Github：[奇迹蛋糕](https://github.com/wpqppqqy)
+- 邮箱：[3688919948@qq.com](mailto:3688919948@qq.com)
 
 ---
 **© 2026 [奇迹蛋糕](https://wpqppqqy.github.io/). All Rights Reserved.**
